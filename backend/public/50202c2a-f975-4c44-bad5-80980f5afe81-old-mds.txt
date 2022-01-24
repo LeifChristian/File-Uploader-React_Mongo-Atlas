@@ -1,0 +1,16 @@
+<input type="text" data-required="true" data-vgroup="1" id="txLastName" name="txLastName" />
+                </td>
+                <td><span class="fa fa-exclamation-circle neError"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txExternalId">External Employee Id:</label>
+                </td>
+                <td><span class="fa fa-exclamation-circle neError"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="txExternalId" name="txExternalId" />
+                </td>
+                <td><span class="fa fa-exclamation-circle neError"></span></td>
+            </tr>
