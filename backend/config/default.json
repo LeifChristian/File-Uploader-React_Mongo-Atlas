@@ -1,5 +1,5 @@
 {
-  "mongoURI": "",
-  "jwtSecret": "secret",
-  "githubToken": "<yoursecrectaccesstoken>"
-}
+    "mongoURI": "mongodb+srv://dbuser:dbuser@mycluster-erllz.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secret",
+    "githubToken": "<yoursecrectaccesstoken>"
+  }

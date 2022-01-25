@@ -12,20 +12,6 @@ mongoose.Promise = global.Promise;
 
 connectDB();
 
-// mongoose
-//   .connect(dbConfig.db, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   })
-//   .then(
-//     () => {
-//       console.log("Database sucessfully connected");
-//     },
-//     (error) => {
-//       console.log("Database could not be connected: " + error);
-//     }
-//   );
-
 const app = express();
 app.use(bodyParser.json());
 app.use(
@@ -42,6 +28,7 @@ app.use("/api", api);
 const port = process.env.PORT || 4000;
 const server = app.listen(port, () => {
   console.log("Connected to port " + port);
+  console.log(__dirname, "cunt");
 });
 
 app.use((req, res, next) => {

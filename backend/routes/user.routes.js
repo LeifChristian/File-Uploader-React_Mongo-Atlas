@@ -20,12 +20,12 @@ var upload = multer({
   storage: storage,
   fileFilter: (req, file, cb) => {
     if (
-      file.mimetype == "image/png" ||
-      file.mimetype == "image/jpg" ||
-      file.mimetype == "image/jpeg" ||
-      file.mimetype == "text/plain" ||
-      file.mimetype == "application/pdf" ||
-      file.mimetype == "application/rtf"
+      file.mimetype === "image/png" ||
+      file.mimetype === "image/jpg" ||
+      file.mimetype === "image/jpeg" ||
+      file.mimetype === "text/plain" ||
+      file.mimetype === "application/pdf" ||
+      file.mimetype === "application/rtf"
     ) {
       cb(null, true);
     } else {
@@ -83,5 +83,9 @@ router.get("/", (req, res, next) => {
     });
   });
 });
+
+// router.delete("/delete/:id", (req, res, next)=> {
+//   User.fineOne().then(())
+// })
 
 module.exports = router;

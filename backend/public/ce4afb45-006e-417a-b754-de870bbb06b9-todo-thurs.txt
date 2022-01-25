@@ -1,0 +1,6 @@
+make new branch
+copy existing branch
+install jest and get familiar,
+install and play with jdoc" 
+
+
